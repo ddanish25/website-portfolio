@@ -19,6 +19,7 @@ const Navbar = () => {
         style={{ display: showNavList ? 'flex' : null }}
         className='nav__list'
       >
+        {/* Projects Nav */}
         {projects.length ? (
           <li className='nav__list-item'>
             <a
@@ -31,6 +32,7 @@ const Navbar = () => {
           </li>
         ) : null}
 
+        {/* Skills Nav */}
         {skills.length ? (
           <li className='nav__list-item'>
             <a
@@ -43,6 +45,7 @@ const Navbar = () => {
           </li>
         ) : null}
 
+        {/* Experience Nav */}
         {experience.length ? (
           <li className='nav__list-item'>
             <a
@@ -55,6 +58,7 @@ const Navbar = () => {
           </li>
         ) : null}
 
+        {/* Contact Nav */}
         {contact.email ? (
           <li className='nav__list-item'>
             <a
@@ -68,6 +72,7 @@ const Navbar = () => {
         ) : null}
       </ul>
 
+     {/* Theme Button */}
       <button
         type='button'
         onClick={toggleTheme}
@@ -77,6 +82,7 @@ const Navbar = () => {
         {themeName === 'dark' ? <WbSunnyRoundedIcon /> : <Brightness2Icon />}
       </button>
 
+      {/* Hamburger Icon for Nav in MOBILE VIEW */}
       <button
         type='button'
         onClick={toggleNavList}

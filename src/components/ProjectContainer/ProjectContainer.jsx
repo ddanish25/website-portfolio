@@ -6,6 +6,7 @@ import './ProjectContainer.css'
 const ProjectContainer = ({ project }) => (
   <div className='project'>
 
+    {/* Project Image */}
     <div>
       <img
         src={project.image}
@@ -14,9 +15,13 @@ const ProjectContainer = ({ project }) => (
       />
     </div>
 
+    {/* Project Name */}
     <h3>{project.name}</h3>
 
+    {/* Project Description */}
     <p className='project__description'>{project.description}</p>
+
+    {/* Project Stack[Skills] */}
     {project.stack && (
       <ul className='project__stack'>
         {project.stack.map((item) => (
@@ -27,6 +32,7 @@ const ProjectContainer = ({ project }) => (
       </ul>
     )}
 
+    {/* Project GitHub */}
     {project.sourceCode && (
       <a
         href={project.sourceCode}
@@ -37,6 +43,7 @@ const ProjectContainer = ({ project }) => (
       </a>
     )}
 
+    {/* Project Link */}
     {project.livePreview && (
       <a
         href={project.livePreview}

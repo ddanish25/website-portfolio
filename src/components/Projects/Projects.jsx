@@ -1,10 +1,6 @@
-// Import unique ID generator for React keys
 import uniqid from 'uniqid';
-// Import projects data from portfolio configuration
 import { projects } from '../../portfolio'
-// Import the ProjectContainer component that renders individual project cards
 import ProjectContainer from '../ProjectContainer/ProjectContainer'
-// Import associated styles
 import './Projects.css'
 
 /**
@@ -25,7 +21,7 @@ const Projects = () => {
         {/* Map through projects array and render a ProjectContainer for each */}
         {projects.map((project) => (
           <ProjectContainer 
-            key={uniqid()} // Unique key for React list rendering optimization
+            key={uniqid()}
             project={project} 
           />
         ))}

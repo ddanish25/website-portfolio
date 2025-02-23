@@ -12,23 +12,35 @@ const Experience = () => {
 
   return (
     <section className="section experience" id="experience">
+
+      {/* Education Title */}
       <h2 className="section__title">Experience</h2>
-      <VerticalTimeline lineColor={'!white'}>
+
+      {/* Uses react-vertical-timeline-component package */}
+      {/* Vertical Line (make sure to leave lineColor empty)*/}
+      <VerticalTimeline lineColor={''}>
+
+        {/* Work Experience Points */}
         {experience.map((exp, index) => (
           <VerticalTimelineElement
             key={index}
             className="vertical-timeline-element--work"
             date={exp.date}
-            iconStyle={{ background: primaryColor, color: '#fff' }}
+            iconStyle={{ background: 'var(--clr-primary)', color: '#fff' }}
           >
+
+            {/* Stuff inside the Block */}
             <h3 className="vertical-timeline-element-title">{exp.title}</h3>
             <h4 className="vertical-timeline-element-subtitle">
               {exp.company} - {exp.location}
             </h4>
             <p>{exp.description}</p>
+
+
           </VerticalTimelineElement>
         ))}
 
+        {/* Education Points */}
         {education.map((edu, index) => (
           <VerticalTimelineElement
             key={index}
@@ -36,11 +48,15 @@ const Experience = () => {
             date={edu.date}
             iconStyle={{ background: 'var(--clr-primary)', color: '#fff' }}
           >
+            
+            {/* Stuff inside the Block */}
             <h3 className="vertical-timeline-element-title">{edu.degree}</h3>
             <h4 className="vertical-timeline-element-subtitle">
               {edu.school} - {edu.location}
             </h4>
             <p>{edu.description}</p>
+
+
           </VerticalTimelineElement>
         ))}
       </VerticalTimeline>
