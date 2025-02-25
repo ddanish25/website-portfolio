@@ -36,7 +36,7 @@ const projects = [
       'Join us for a hands-on workshop where you’ll build a sleek login page using React, Tailwind, and Firebase Authentication! Learn how to sign up and log in with email & password, as well as authenticate with Google—all in a modern, responsive UI. Perfect for beginners and those looking to integrate Firebase Auth into their projects. 🚀 Feb. 18th | 7:00 to 8:00 PM | ECSS 2.415',
     stack: ['Firebase', 'React'],
     sourceCode: 'https://github.com/gdscutd/react-firebase-auth',
-    image: '/img/firebase.png',
+    image: './img/firebase.png',
   },
   {
     name: 'Portfolio',
@@ -44,7 +44,7 @@ const projects = [
       'Join us for a Personal Portfolio Workshop using React.js and Tailwind CSS. This beginner-friendly session provides a code template to help you get started, offering hands-on learning to build your personal portfolio step by step. Learn modern web development tools to create a sleek, responsive website that enhances your resume. The workshop includes a Q&A session and live debugging support from peers and mentors. February 24th | 7:00 PM to 8:30 PM | ECSS 2.415.',
     stack: ['React', 'Vite', 'Tailwind'],
     livePreview: 'https://gdg.community.dev/events/details/google-gdg-on-campus-the-university-of-texas-at-dallas-richardson-united-states-presents-design-your-own-personal-website/',
-    image: '/img/portfolio.png',
+    image: './img/portfolio.png',
   },
 ]
 
